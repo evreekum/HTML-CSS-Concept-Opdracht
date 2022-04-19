@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&display=swap');
+
+/*__________1. Global Styles__________*/
+* {
+    margin: 2px;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+/*___1.1 Variabelen___*/
+:root {
+    --header-footer-bg-color: #5722cd;
+    --main-bg-color: white;
+    --projects-bg-color: #f3f6f9;
+    --
+}
+
+/*__________2. Typography___________*/
+h1,
+h2,
+h3 {
+    font-family: "Merriweather", Serif;
+}
+h1 {
+    color: white;
+}
+/*__________3. Layout__________*/
+
+/*__________4. Areas__________*/
+
+/*___4.1 HEADER___*/
+.header__outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid red;
+    /*position: relative;*/
+    background-color: var(--header-footer-bg-color);
+
+}
+
+.header__inner-container {
+    flex-basis: 1400px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+}
+
+.navigation {
+    border: 2px solid orange;
+
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2em;
+    font-weight: bolder;
+}
+
+.navigation__item {
+    list-style-type: none;
+
+}
+
+.navigation__item a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #f2f0ff;
+
+}
+.header__hero-section {
+    box-sizing: border-box;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    /*align-self: center;*/
+}
+
+.header__sub {
+    color: white;
+    font-size: 30px;
+}
+
+.button--active {
+    text-transform: uppercase;
+    background-color: #ed4385;
+    color: white;
+    border: 15px solid #ed4385;
+    border-radius: 50px;
+    box-shadow: 0px 5px 70px black;
+    width: auto;
+
+
+}
+
+.header__wave-img {
+    border: 2px solid orange;
+    width: 100px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    align-self: center;
+}
+
+/*___4.2 MAIN___*/
+
+
+
+/*___4.3 FOOTER___*/
+.footer__outer-container {
+    border: 2px solid red;
+    background-color: #5722cd;
+}
+
+.footer__inner-container {
+    border: 2px solid green;
+}
+
+.footer__hero-section {
+    border: 2px solid orange;
+}
+
+.footer__title {
+
+}
+
+.footer__sub {
+
+}
+
+form {
+
+}
+
+.submit {
+
+}
