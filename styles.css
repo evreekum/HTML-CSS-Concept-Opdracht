@@ -37,7 +37,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     /*position: relative;*/
     background-color: var(--header-footer-bg-color);
 
@@ -45,7 +45,7 @@ h3 {
 
 .header__inner-container {
     flex-basis: 1400px;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +54,7 @@ h3 {
 }
 
 .navigation {
-    border: 2px solid orange;
+    /*border: 2px solid orange;*/
 
 }
 
@@ -80,7 +80,7 @@ h3 {
 }
 .header__hero-section {
     box-sizing: border-box;
-    border: 2px solid orange;
+    /*border: 2px solid orange;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +112,7 @@ h3 {
     word-spacing: 3px;
     border: 20px solid #ed4385;
     border-radius: 50px;
-    box-shadow: 0px 10px 70px -20px black;
+    box-shadow: 0px 15px 60px -20px black;
     width: auto;
     /*padding-bottom: ;*/
 
@@ -150,9 +150,9 @@ h3 {
 
 }
 
-.main__title1,
-.main__title2,
-.main__title3 {
+.main__title-1,
+.main__title-2,
+.main__title-3 {
     padding: 1em;
     /*text-align: center;*/
 }
@@ -161,7 +161,7 @@ h3 {
     border: 2px solid orange;
     padding-top: 30px;
 }
- .main__title1 {
+ .main__title-1 {
      border: 2px solid orange;
      padding-top: 30px;
  }
