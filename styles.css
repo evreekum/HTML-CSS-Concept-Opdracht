@@ -11,7 +11,7 @@
     --header-footer-bg-color: #5722cd;
     --main-bg-color: white;
     --projects-bg-color: #f3f6f9;
-    --
+
 }
 
 /*__________2. Typography___________*/
@@ -22,6 +22,11 @@ h3 {
 }
 h1 {
     color: white;
+    font-size: 50px;
+}
+h3 {
+    color: var(--header-footer-bg-color);
+    font-size: 30px;
 }
 /*__________3. Layout__________*/
 
@@ -43,8 +48,8 @@ h1 {
     border: 2px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
+    align-content: flex-end;
     position: relative;
 }
 
@@ -58,11 +63,12 @@ h1 {
     flex-direction: row;
     justify-content: flex-end;
     gap: 2em;
-    font-weight: bolder;
+    /*font-weight: bold;*/
 }
 
 .navigation__item {
     list-style-type: none;
+    max-width: 1400px;
 
 }
 
@@ -79,31 +85,42 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4em;
+
 }
 
 .header__title {
+    max-width: 850px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
     /*align-self: center;*/
 }
 
 .header__sub {
+    display: inline-block;
     color: white;
     font-size: 30px;
+    padding-bottom: 30px;
 }
 
 .button--active {
     text-transform: uppercase;
     background-color: #ed4385;
     color: white;
-    border: 15px solid #ed4385;
+    font-size: 18px;
+    word-spacing: 3px;
+    border: 20px solid #ed4385;
     border-radius: 50px;
-    box-shadow: 0px 5px 70px black;
+    box-shadow: 0px 10px 70px -20px black;
     width: auto;
+    /*padding-bottom: ;*/
 
 
 }
 
 .header__wave-img {
-    border: 2px solid orange;
+    /*border: 2px solid orange;*/
     width: 100px;
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -113,35 +130,121 @@ h1 {
 }
 
 /*___4.2 MAIN___*/
+.main__outer-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
 
+.main__inner-container-1 {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 950px;
+
+}
+
+.main__title1,
+.main__title2,
+.main__title3 {
+    padding: 1em;
+    /*text-align: center;*/
+}
+
+.question-click {
+    border: 2px solid orange;
+    padding-top: 30px;
+}
+ .main__title1 {
+     border: 2px solid orange;
+     padding-top: 30px;
+ }
 
 
 /*___4.3 FOOTER___*/
 .footer__outer-container {
     border: 2px solid red;
     background-color: #5722cd;
+    display: block;
 }
 
 .footer__inner-container {
     border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/*.footer__hero-section::first-letter {*/
+/*    text-transform: capitalize;*/
+/*}*/
 .footer__hero-section {
     border: 2px solid orange;
 }
 
 .footer__title {
+    border: 2px solid orange;
+    text-transform: capitalize;
 
 }
 
 .footer__sub {
-
+    border: 2px solid orange;
+    color: white;
+    text-align: center;
 }
 
 form {
+    border: 2px solid orange;
+    align-self: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2em;
+    color: white;
 
 }
 
-.submit {
+.personal-information {
+    border: 2px solid orange;
+    display: block;
+    align-self: flex-start;
+    /*align-items: flex-start;*/
+    /*display: block;*/
+    /*text-transform: capitalize;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-evenly;*/
+    /*align-items: flex-start;*/
+    /*gap: 2em;*/
+    /*color: white;*/
+}
+/*#fullname,*/
+/*#emailaddress,*/
+/*#message-us {*/
+/*    align-self: flex-start;*/
+/*    display: block;*/
+/*    width: ;*/
+/*}*/
+
+form button {
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #ed4385;
+    color: white;
+    border: 15px solid #ed4385;
+    border-radius: 50px;
+    box-shadow: 0px 10px 70px -20px black;
+    width: 150px;
 
 }

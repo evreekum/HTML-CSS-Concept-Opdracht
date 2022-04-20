@@ -6,6 +6,7 @@
     <title>Title</title>
 </head>
 <body>
+<!--___HEADER___-->
 <header class="header__outer-container">
     <div class="header__inner-container">
         <nav class="navigation">
@@ -19,40 +20,49 @@
             <h1 class="header__title">Your website is an investment in the success of your business.</h1>
             <p class="header__sub">We are here to help you succeed.</p>
             <button class="button--active">let's work together</button>
+
         </div>
         <div class="header__wave-img"><img src="/assets/squiggle_line_stripe.svg" alt="Wave image">
         </div>
     </div>
 </header>
 
+<!--___MAIN___-->
 <main class="main__outer-container">
     <div class="main__inner-container-1">
-        <h2 class="main__title1">Rekupe is a digital agency in Los Angeles.
-            We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.
-            We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
-        </h2>
-        <p>Have a question? <a href="#name">Click here</a> to contact us!</p>
+        <h3 class="main__title1">Rekupe is a digital agency in Los Angeles.
+        </h3>
+        <h3 class="main__title2">We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.
+        </h3>
+        <h3 class="main__title3">We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
+        </h3>
+        <p class="question-click">Have a question? <a href="#fullname">Click here</a> to contact us!</p>
         
     </div>
 </main>
+
+<!--    ___FOOTER___-->
 <footer class="footer__outer-container">
     <div class="footer__inner-container">
         <div class="footer__hero-section">
             <h1 class="footer__title">let's work together</h1>
-            <p class="footer__sub">have a question? need a quote? let us know!</p>
+            <p class="footer__sub">Have a question? Need a quote? Let us know!</p>
         </div>
         <form onsubmit="javascipt-needed">
-            <label for="fullname">name
-                <input type="text" id="fullname" placeholder="name" />
-            </label>
-            <label for="emailaddress">email
-                <input type="email" id="emailaddress" placeholder="email" />
-            </label>
-            <label for="message-us">message
-                <input type="text" id="message-us" placeholder="message">
-            </label>
-            <button type="submit">send</button>
-
+            <section class="personal-information">
+                <label for="fullname">name
+                    <input type="text" id="fullname" placeholder="Name" />
+                </label>
+                <label for="emailaddress">email
+                    <input type="email" id="emailaddress" placeholder="Email" />
+                </label>
+                <label for="message-us">message
+                    <input type="text" id="message-us" placeholder="Message">
+                </label>
+            </section>
+            <section class="button-send">
+                <button type="submit">send</button>
+            </section>
 
         </form>
     </div>
