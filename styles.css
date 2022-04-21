@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400&display=swap');
 
 /*__________1. Global Styles__________*/
 * {
-    margin: 2px;
     box-sizing: border-box;
     font-family: roboto, sans-serif;
+    padding: 0;
+    margin: 0;
 }
-/*___1.1 Variabelen___*/
+/*___1.1 Variables___*/
 :root {
-    --header-footer-bg-color: #5722cd;
+    --main-title-font-color: #5722cd;
     --main-bg-color: white;
-    --projects-bg-color: #f3f6f9;
+    --main-projects-bg-color: #f3f6f9;
 
 }
 
@@ -18,18 +19,62 @@
 h1,
 h2,
 h3 {
-    font-family: "Merriweather", Serif;
+    font-family: Merriweather, Serif;
 }
 h1 {
     color: white;
     font-size: 50px;
 }
 h3 {
-    color: var(--header-footer-bg-color);
+    color: var(--main-title-font-color);
     font-size: 30px;
 }
 /*__________3. Layout__________*/
+.header__outer-container,
+.main__outer-container,
+.footer__outer-container {
+    border: 2px solid red;
+}
 
+.header__inner-container,
+.main__inner-container-1,
+.footer__inner-container {
+    border: 2px solid green;
+}
+
+.navigation,
+.navigation__item,
+.navigation__list,
+.header__hero-section,
+.header__title,
+.header__sub,
+.button--active,
+.header__wave-img,
+.main__title-1,
+.main__title-2,
+.main__title-3,
+.question-click,
+.main__article-1,
+.main__article-2,
+.main__article-3,
+.main__article-4,
+.main__article-5,
+.main__text-1,
+.main__text-2,
+.main__text-3,
+.main__text-4,
+.main__text-5,
+.footer__hero-section,
+.footer__title,
+.footer__sub,
+.footer__personal-information,
+.footer__fullname,
+.footer__emailaddress,
+.footer__message-us,
+.footer__button-send,
+.footer__javascipt-needed {
+    border: 2px solid orange;
+    }
 /*__________4. Areas__________*/
 
 /*___4.1 HEADER___*/
@@ -37,15 +82,13 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*border: 2px solid red;*/
     /*position: relative;*/
-    background-color: var(--header-footer-bg-color);
+    background-color: var(--main-title-font-color);
 
 }
 
 .header__inner-container {
     flex-basis: 1400px;
-    /*border: 2px solid green;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +106,10 @@ h3 {
     flex-direction: row;
     justify-content: flex-end;
     gap: 2em;
-    /*font-weight: bold;*/
+    padding: 10px;
+    font-weight: bold;
+    padding-top: 25px;
+    font-size: 15px;
 }
 
 .navigation__item {
@@ -98,6 +144,7 @@ h3 {
 }
 
 .header__sub {
+    font-weight: lighter;
     display: inline-block;
     color: white;
     font-size: 30px;
@@ -112,15 +159,20 @@ h3 {
     word-spacing: 3px;
     border: 20px solid #ed4385;
     border-radius: 50px;
-    box-shadow: 0px 15px 60px -20px black;
-    width: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 11px 13px -10px black;
+    letter-spacing: 1px;
+
+    /*width: auto;*/
     /*padding-bottom: ;*/
 
 
 }
 
 .header__wave-img {
-    /*border: 2px solid orange;*/
     width: 100px;
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -131,7 +183,6 @@ h3 {
 
 /*___4.2 MAIN___*/
 .main__outer-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +191,6 @@ h3 {
 }
 
 .main__inner-container-1 {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -158,24 +208,20 @@ h3 {
 }
 
 .question-click {
-    border: 2px solid orange;
     padding-top: 30px;
 }
  .main__title-1 {
-     border: 2px solid orange;
      padding-top: 30px;
  }
 
 
 /*___4.3 FOOTER___*/
 .footer__outer-container {
-    border: 2px solid red;
-    background-color: #5722cd;
+    background-color: var(--main-title-font-color);
     display: block;
 }
 
 .footer__inner-container {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -186,23 +232,20 @@ h3 {
 /*    text-transform: capitalize;*/
 /*}*/
 .footer__hero-section {
-    border: 2px solid orange;
+
 }
 
 .footer__title {
-    border: 2px solid orange;
     text-transform: capitalize;
 
 }
 
 .footer__sub {
-    border: 2px solid orange;
     color: white;
     text-align: center;
 }
 
 form {
-    border: 2px solid orange;
     align-self: center;
     text-transform: capitalize;
     display: flex;
@@ -214,8 +257,7 @@ form {
 
 }
 
-.personal-information {
-    border: 2px solid orange;
+.footer__personal-information {
     display: block;
     align-self: flex-start;
     /*align-items: flex-start;*/
