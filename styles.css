@@ -21,14 +21,22 @@ h2,
 h3 {
     font-family: Merriweather, Serif;
 }
+
 h1 {
     color: white;
     font-size: 50px;
 }
+
+h2 {
+    color: white;
+    font-size: 50px;
+}
+
 h3 {
     color: var(--main-title-font-color);
     font-size: 30px;
 }
+
 /*__________3. Layout__________*/
 .header__outer-container,
 .main__outer-container,
@@ -38,6 +46,8 @@ h3 {
 
 .header__inner-container,
 .main__inner-container-1,
+.main__inner-container-2,
+.main__inner-container-3,
 .footer__inner-container {
     border: 2px solid green;
 }
@@ -53,7 +63,7 @@ h3 {
 .main__title-1,
 .main__title-2,
 .main__title-3,
-.question-click,
+.main__question-click,
 .main__article-1,
 .main__article-2,
 .main__article-3,
@@ -74,7 +84,8 @@ h3 {
 .footer__button-send,
 .footer__javascipt-needed {
     border: 2px solid orange;
-    }
+}
+
 /*__________4. Areas__________*/
 
 /*___4.1 HEADER___*/
@@ -82,7 +93,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*position: relative;*/
+    position: relative;
     background-color: var(--main-title-font-color);
 
 }
@@ -97,7 +108,7 @@ h3 {
 }
 
 .navigation {
-    /*border: 2px solid orange;*/
+
 
 }
 
@@ -114,7 +125,7 @@ h3 {
 
 .navigation__item {
     list-style-type: none;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
 
 }
 
@@ -126,7 +137,6 @@ h3 {
 }
 .header__hero-section {
     box-sizing: border-box;
-    /*border: 2px solid orange;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,6 +189,8 @@ h3 {
     /*justify-content: center;*/
     /*align-content: center;*/
     align-self: center;
+    /*position: absolute;*/
+    /*botto*/
 }
 
 /*___4.2 MAIN___*/
