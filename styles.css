@@ -86,21 +86,23 @@ h4 {
 .main__title-2,
 .main__title-3,
 .main__question-click,
-.main__article-1,
-.main__article-2,
-.main__article-3,
-.main__article-4,
-.main__article-5,
-.main__text-1,
-.main__text-2,
-.main__text-3,
-.main__text-4,
-.main__text-5,
+.main__work-1,
+.main__work-2,
+/*.main__article-2,*/
+/*.main__article-3,*/
+/*.main__article-4,*/
+/*.main__article-5,*/
+/*.main__text-1,*/
+/*.main__text-2,*/
+/*.main__text-3,*/
+/*.main__text-4,*/
+/*.main__text-5,*/
 .main__services-1,
 .main__services-2,
 .main__services-3,
 .main__services-4,
 .main__services-5,
+.main__services-6,
 .footer__hero-section,
 .footer__title,
 .footer__sub,
@@ -227,6 +229,7 @@ h4 {
     padding-top: 30px;
 }
 
+/*__4.2.1 MAIN-INNER-CONTAINER-1__*/
 .main__inner-container-1 {
     display: flex;
     flex-direction: column;
@@ -252,6 +255,19 @@ h4 {
      padding-top: 30px;
  }
 
+/*__4.2.2 MAIN-INNER-CONTAINER-2__*/
+.main__inner-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+}
+.main
+
+
+
+/*__4.2.3 MAIN-INNER-CONTAINER-3__*/
 
 /*___4.3 FOOTER___*/
 .footer__outer-container {
