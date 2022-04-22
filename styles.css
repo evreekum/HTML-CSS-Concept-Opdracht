@@ -31,7 +31,8 @@
 /*__________2. Typography___________*/
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: Merriweather, Serif;
 }
 
@@ -53,6 +54,21 @@ h3 {
 h4 {
     color: black;
     font-size: 30px;
+    text-transform: capitalize;
+}
+
+.main__text-1,
+.main__text-2,
+.main__text-3,
+.main__text-4,
+.main__text-5,
+.main__text-6 {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+.main__inner-container-2 a {
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /*__________3. Layout__________*/
@@ -224,9 +240,10 @@ h4 {
 .main__outer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 30px;
+
 }
 
 /*__4.2.1 MAIN-INNER-CONTAINER-1__*/
@@ -247,8 +264,8 @@ h4 {
     /*text-align: center;*/
 }
 
-.question-click {
-    padding-top: 30px;
+.main__question-click {
+    padding-top: 60px;
 }
 
  .main__title-1 {
@@ -261,10 +278,32 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    max-width: 1400px;
+    width: 1400px;
 }
-.main
 
+
+.main__work-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.main__work-1 .main__subject {
+    align-self: flex-end;
+}
+.main__work-2 {
+
+}
+
+.main__inner-container-2 img {
+    width: 600px;
+}
+
+h4 + .main__squiggle {
+    width: 60px;
+}
 
 
 /*__4.2.3 MAIN-INNER-CONTAINER-3__*/
