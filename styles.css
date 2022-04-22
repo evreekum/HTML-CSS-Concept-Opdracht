@@ -32,7 +32,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: Merriweather, Serif;
 }
 
@@ -57,6 +58,12 @@ h4 {
     text-transform: capitalize;
 }
 
+h5 {
+    color: var(--main-title-font-color);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
 .main__text-1,
 .main__text-2,
 .main__text-3,
@@ -69,6 +76,11 @@ h4 {
 .main__inner-container-2 a {
     text-transform: uppercase;
     text-decoration: none;
+}
+
+h5 + p {
+    font-size: 18px;
+
 }
 
 /*__________3. Layout__________*/
@@ -113,12 +125,12 @@ h4 {
 /*.main__text-3,*/
 /*.main__text-4,*/
 /*.main__text-5,*/
-.main__services-1,
-.main__services-2,
-.main__services-3,
-.main__services-4,
-.main__services-5,
-.main__services-6,
+/*.main__services-1,*/
+/*.main__services-2,*/
+/*.main__services-3,*/
+/*.main__services-4,*/
+/*.main__services-5,*/
+/*.main__services-6,*/
 .footer__hero-section,
 .footer__title,
 .footer__sub,
@@ -285,13 +297,19 @@ h4 {
 .main__work-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
-.main__work-1 .main__subject {
+.main__subject-1 {
     align-self: flex-end;
+    text-align: start;
+
+}
+.main__subject-1 + p {
+    width: 300px;
+    align-self: flex-start;
 }
 .main__work-2 {
 
@@ -307,6 +325,50 @@ h4 + .main__squiggle {
 
 
 /*__4.2.3 MAIN-INNER-CONTAINER-3__*/
+.main__inner-container-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+
+
+}
+
+.main__services-1 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid var(--main-title-font-color);
+    padding: 30px;
+}
+
+/*.main__services-2 {*/
+
+/*}*/
+
+/*.main__services-3 {*/
+
+/*}*/
+
+/*.main__services-4 {*/
+
+/*}*/
+
+/*.main__services-5 {*/
+
+/*}*/
+
+/*.main__services-6 {*/
+
+/*}*/
+
+.main__service-logo {
+    width: 80px;
+}
+
+
 
 /*___4.3 FOOTER___*/
 .footer__outer-container {
