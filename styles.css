@@ -98,7 +98,11 @@ h5 + p {
 .header__outer-container,
 .main__outer-container,
 .footer__outer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     border: 2px solid red;
+    flex-wrap: wrap;
 }
 
 .header__inner-container,
@@ -106,6 +110,11 @@ h5 + p {
 .main__inner-container-2,
 .main__inner-container-3,
 .footer__inner-container {
+    flex-basis: 1400px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid green;
 }
 
@@ -154,25 +163,27 @@ h5 + p {
 
 /*___4.1 HEADER___*/
 .header__outer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*position: relative;*/
     background-color: var(--main-title-font-color);
 
 }
 
 .header__inner-container {
-    flex-basis: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
+    /*flex-basis: 1400px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-content: flex-end;*/
     /*position: relative;*/
 }
 
 .navigation {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
 }
 
@@ -189,7 +200,7 @@ h5 + p {
 
 .navigation__item {
     list-style-type: none;
-    /*max-width: 1400px;*/
+
 
 }
 
@@ -215,7 +226,7 @@ h5 + p {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
-    /*align-self: center;*/
+
 }
 
 .header__sub {
@@ -241,29 +252,23 @@ h5 + p {
     box-shadow: 0 11px 13px -10px black;
     letter-spacing: 1px;
 
-    /*width: auto;*/
-    /*padding-bottom: ;*/
 }
 
 .header__wave-img {
     width: 100px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-content: center;*/
     align-self: center;
-    /*position: absolute;*/
 }
 
 /*___4.2 MAIN___*/
-.main__outer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 30px;
 
-}
+/*.main__outer-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*    padding-top: 30px;*/
+
+/*}*/
 
 /*__4.2.1 MAIN-INNER-CONTAINER-1__*/
 .main__inner-container-1 {
@@ -279,8 +284,7 @@ h5 + p {
 .main__title-1,
 .main__title-2,
 .main__title-3 {
-    padding: 1em;
-    /*text-align: center;*/
+    /*padding: 1em;*/
 }
 
 .main__question-click {
@@ -288,48 +292,34 @@ h5 + p {
 }
 
 .main__title-1 {
-     padding-top: 30px;
+     /*padding-top: 30px;*/
  }
 
-/*__4.2.2 MAIN-INNER-CONTAINER-2__*/
-.main__inner-container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 1400px;
-    position: relative;
-}
-
+/*!*__4.2.2 MAIN-INNER-CONTAINER-2__*!*/
 
 .main__work-1 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    width: 1200px;
+    flex-direction: row;
+    gap: 3em;
 
+
+}
+.main__card-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.main__wrapper-1 {
+    flex-basis: 800px;
+}
+
+.main__squiggle {
+    width: 80px;
 }
 
 .main__subject-1 {
-    align-self: flex-end;
-    text-align: start;
-
-}
-.main__subject-1 + p {
-    width: 300px;
-}
-.main__work-2 {
-
-}
-
-.main__inner-container-2 img {
-    width: 600px;
-}
-
-h4 + .main__squiggle {
-    width: 60px;
+    width: 100%;
 }
 
 
@@ -347,8 +337,8 @@ h4 + .main__squiggle {
     justify-content: space-around;
     /*align-content: space-around;*/
     flex-wrap: wrap;
-    padding: 2em;
-    margin: 2em;
+    padding: 2rem;
+    margin: 2rem;
 
 }
 
@@ -470,7 +460,7 @@ form button {
     color: white;
     border: 15px solid #ed4385;
     border-radius: 50px;
-    box-shadow: 0px 10px 70px -20px black;
+    box-shadow: 0 10px 70px -20px black;
     width: 150px;
 }
 
